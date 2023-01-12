@@ -1,18 +1,15 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
-const folderSchema = new mongoose.Schema(
-  {
-    name: {
-      type: String,
-      required: true,
-    },
-    authorId: {
-      type: String,
-      required: true,
-    },
+const folderSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true
   },
-  { timestamps: true }
-);
+  authorId: {
+    type: String,
+    required: true
+  }
+}, { timestamps: true });
 
-const FolderModel = mongoose.model("Folder", folderSchema);
+const FolderModel = mongoose.model('Folder', folderSchema);
 export default FolderModel;
