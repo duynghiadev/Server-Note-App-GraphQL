@@ -3,9 +3,4 @@ import FolderModel from "./FolderModel.js";
 import AuthorModel from "./AuthorModel.js";
 import NotificationModel from "./NotificationModel.js";
 
-export {
-  NoteModel,
-  FolderModel,
-  AuthorModel,
-  NotificationModel
-}
+export { NoteModel, FolderModel, AuthorModel, NotificationModel };
